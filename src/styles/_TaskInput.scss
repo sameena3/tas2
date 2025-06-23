@@ -1,0 +1,68 @@
+/* taskinput.scss */
+.container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a5568;
+    font-size: 2.2rem;
+    font-weight: 700;
+  
+  }
+
+  input[type='text'],
+  input[type='datetime-local'] {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+
+  
+  
+  }
+
+  #cbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #4a5568;
+    font-weight: 500;
+
+    input[type='checkbox'] {
+      width: 20px;
+      height: 20px;
+      accent-color: #667eea;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+
+  
+  }
+}
