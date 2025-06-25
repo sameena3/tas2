@@ -1,0 +1,82 @@
+// src/components/AuthModal.scss
+@import '../styles/variables';
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); // Slightly darker overlay for auth
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; // Higher z-index for auth modal
+}
+
+.auth-modal-content { // Renamed from .modal-content to be specific
+  background-color: $bg-white;
+  border-radius: 0.5rem;
+  box-shadow: $shadow-lg; // Stronger shadow
+  width: 100%;
+  max-width: 400px; // Slightly narrower for auth forms
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative; // For positioning close button if needed
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid $border-gray;
+}
+
+.modal-title {
+  font-size: 1.5rem; // Slightly larger title
+  font-weight: 700;
+  color: $text-gray-900;
+  margin: 0;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $text-gray-500;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $border-gray;
+  }
+}
+
+.modal-body {
+  padding: 1.5rem; // More padding for forms
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-switch-prompt {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid $border-gray;
+    font-size: 0.875rem;
+    color: $text-gray-600;
+
+    span {
+        color: $blue-600;
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+// src/styles/_base.scss
+
+// Basic CSS Reset
+// This helps ensure consistent styling across different browsers by neutralizing default browser styles.
+*, *::before, *::after {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  line-height: 1.5; /* Set a comfortable line height for readability */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on macOS/iOS */
+  font-family: 'Inter', sans-serif; /* Use Inter (or your preferred font) as the primary font */
+  color: #333; /* Set a default dark text color */
+}
+
+/* Ensure images, pictures, videos, canvas, and SVGs are responsive */
+img, picture, video, canvas, svg {
+  display: block; /* Remove extra space below inline elements */
+  max-width: 100%; /* Make them scale down if wider than their container */
+}
+
+/* Inherit font styles for form elements */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Prevent text from overflowing in containers */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Create a new stacking context for root elements to prevent z-index issues */
+#root, #__next { /* #root for Create React App, #__next for Next.js */
+  isolation: isolate;
+}
+
+// ---
+// Global Utility Classes (Optional)
+// These are simple, reusable classes that can be applied anywhere in your HTML.
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Add any other global styles, typography defaults, or common utility classes here.
+// For example, you might define common link styles, button bases, etc.

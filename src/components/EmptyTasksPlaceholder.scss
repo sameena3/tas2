@@ -1,0 +1,36 @@
+// src/components/EmptyTasksPlaceholder.scss
+@import '../styles/variables';
+
+// SCSS Variables
+$text-gray-400: #9ca3af;
+$text-gray-300: #d1d5db;
+$text-gray-600: #4b5563;
+$text-gray-500: #6b7280;
+
+.empty-placeholder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: $text-gray-400;
+
+  .empty-placeholder-icon { // SCSS Nesting
+    color: $text-gray-300;
+    margin-bottom: 1.5rem;
+  }
+
+  .empty-placeholder-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-gray-600;
+    margin-bottom: 0.75rem;
+  }
+
+  .empty-placeholder-text {
+    font-size: 1rem;
+    color: $text-gray-500;
+    max-width: 28rem;
+  }
+}

@@ -1,0 +1,33 @@
+// src/index.scss
+
+// SCSS Variables for global consistency
+$font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+$code-font-stack: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+$text-color: #333;
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+code {
+  font-family: $code-font-stack;
+}
+
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
